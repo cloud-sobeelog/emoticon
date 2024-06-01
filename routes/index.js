@@ -1,12 +1,18 @@
 const express = require('express');
+const emoticonPOST = require('../controllers/emoticon/emoticonPOST');
+const emoticonDELETE = require('../controllers/emoticon/emoticonDELETE');
+const emoticonGET = require('../controllers/emoticon/emoticonGET');
+const countOfEmoticonGET = require('../controllers/emoticon/countOfEmoticonGET');
+
 const router = express.Router();
 
-//router.use('/mycalendar', require('./mycalendar'));
-//router.use('/consumptions',require('./consumptionHistory')); 
-//router.use('/comment', require('./comment'));
-//router.use('/calendarfeed',require('./calendarFeed'));
-//router.use('/friends', require('./friends'));
-router.use('/emoticon', require('./emoticon'));
-//router.use('/user',require('./user'));
-//router.use('/auth', require('./auth'));
+
+router.post('/:cHistoryID', emoticonPOST); // 공감하기 좋아요/ 싫어요)
+
+router.get('/:cHistoryID/user/:userID', emoticonGET); // 공감 조회하기
+router.get('/:cHistoryID/:category', countOfEmoticonGET)  // 공감 개수 조회하기
+
+
+router.delete('/:cHistoryID', emoticonDELETE); // 공감 취소하기
+
 module.exports = router;
