@@ -8,9 +8,10 @@ module.exports = {
     DELETE_CMOTICON_SUCCESS: '공감 취소 성공',
     DELETE_CMOTICON_FAIL: '공감 취소 실패',
     EMOTICON_EXIST:'이미 공감을 한 게시물입니다',
-    GET_EMOTION_BY_USERID:'이모티콘 조회 성공',
+    GET_EMOTION_BY_USERID:'사용자별 이모티콘 조회 성공',
     CHANGE_EMOTION_SUCCESS:'이모티콘 변경 성공',
-    GET_COUNT_OF_EMOTICON:'이모티콘 개수 조회 성공',
+    GET_COUNT_OF_EMOTICON:'하나의 소비내역당 공감종류별 개수 조회 성공',
+    GET_EMOTION_BY_HISTORYID:'소비내역별 이모티콘 조회 성공',
 
     // 서버 내 오류
     INTERNAL_SERVER_ERROR: '서버 내 오류',

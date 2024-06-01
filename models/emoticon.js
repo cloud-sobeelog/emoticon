@@ -71,6 +71,14 @@ const getCountOfEmoticon = async(cHistoryID, category) => {
     return emoticonCount;
 }
 
+const getEmoticonByHistoryID = async(cHistoryID) => {
+    let sql = `SELECT emoticonID, userID, category
+    FROM emoticon e
+    WHERE e.cHistoryID = ${cHistoryID}`
+    let [rows] = await db.query(sql);
+    return rows;
+}
+
 
 module.exports = {
     isUserEmoticon,
@@ -79,5 +87,6 @@ module.exports = {
     deleteEmoticon,
     deleteEmoticonAnotherCategory,
     getEmoticonByUserID,
-    getCountOfEmoticon
+    getCountOfEmoticon, 
+    getEmoticonByHistoryID
 }
