@@ -10,6 +10,7 @@ module.exports = {
     EMOTICON_EXIST:'이미 공감을 한 게시물입니다',
     GET_EMOTION_BY_USERID:'이모티콘 조회 성공',
     CHANGE_EMOTION_SUCCESS:'이모티콘 변경 성공',
+    GET_COUNT_OF_EMOTICON:'이모티콘 개수 조회 성공',
 
     // 서버 내 오류
     INTERNAL_SERVER_ERROR: '서버 내 오류',
