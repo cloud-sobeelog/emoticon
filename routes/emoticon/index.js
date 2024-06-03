@@ -1,9 +1,9 @@
 const express = require('express');
-const emoticonPOST = require('../controllers/emoticon/emoticonPOST');
-const emoticonDELETE = require('../controllers/emoticon/emoticonDELETE');
-const emoticonGET = require('../controllers/emoticon/emoticonGET');
-const countOfEmoticonGET = require('../controllers/emoticon/countOfEmoticonGET');
-const emotionByHistoryIdGET = require('../controllers/emoticon/emoticonByHistoryIdGET');
+const emoticonPOST = require('../../controllers/emoticon/emoticonPOST');
+const emoticonDELETE = require('../../controllers/emoticon/emoticonDELETE');
+const emoticonGET = require('../../controllers/emoticon/emoticonGET');
+const countOfEmoticonGET = require('../../controllers/emoticon/countOfEmoticonGET');
+const emotionByHistoryIdGET = require('../../controllers/emoticon/emoticonByHistoryIdGET');
 
 const router = express.Router();
 
