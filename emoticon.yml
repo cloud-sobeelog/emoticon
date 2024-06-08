@@ -14,7 +14,10 @@ spec:
     spec:
       containers:
       - name: emoticon
-        image: senzoo/emoticon:0.1
+        image: choiyoorim/emoticon:0.1
+        envFrom:
+        - secretRef:
+            name: emoticon-secret
         ports:
         - containerPort: 8081 # 내부 컨테이너 포트
         imagePullPolicy: Always
